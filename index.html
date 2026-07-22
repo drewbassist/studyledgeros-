@@ -1,13 +1,546 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyLedgerOS</title>
+
+    <title>StudyLedgerOS | Active Recall & Spaced Repetition</title>
+
+    <meta name="description"
+        content="StudyLedgerOS is a study operating system built around active recall and spaced repetition. Organize what you learn, schedule what you review, and measure what you retain.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>StudyLedgerOS</h1>
-    <p>Coming soon.</p>
+
+<header>
+
+    <div class="logo">
+        StudyLedgerOS
+    </div>
+
+    <nav>
+
+        <a href="#learn">Learn</a>
+
+        <a href="#review">Review</a>
+
+        <a href="#measure">Measure</a>
+
+        <a href="#customize">Customize</a>
+
+        <a href="#applications">Applications</a>
+
+        <a href="#faq">FAQ</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            StudyLedgerOS
+        </h1>
+
+        <h2>
+            A study operating system built around active recall and spaced repetition.
+        </h2>
+
+        <p>
+
+            Organize what you learn.
+
+            Schedule what you review.
+
+            Measure what you retain.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#demo" class="button-primary">
+                Watch 2-Minute Demo
+            </a>
+
+        </div>
+
+        <p class="hero-note">
+
+            Originally developed for intensive legal education and designed to support any knowledge-based curriculum.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="demo">
+
+    <h2>
+
+        Watch the Workflow
+
+    </h2>
+
+    <video controls preload="metadata">
+
+        <source src="assets/walkthrough.mp4" type="video/mp4">
+
+    </video>
+
+</section>
+
+
+<section id="learn">
+
+    <h2>
+
+        Learn
+
+    </h2>
+
+    <p class="section-intro">
+
+        Everything begins with deliberate practice.
+
+    </p>
+
+    <div class="feature-grid">
+
+        <article>
+
+            <h3>Essays</h3>
+
+            <p>
+
+                Capture practice essays, ratings, notes, sources, and review schedules.
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Practice Questions</h3>
+
+            <p>
+
+                Track accuracy, question sources, and performance over time.
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Flashcards</h3>
+
+            <p>
+
+                Record completed card ranges and strengthen retrieval through repetition.
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Lectures</h3>
+
+            <p>
+
+                Log lecture time and connect learning to future review.
+
+            </p>
+
+        </article>
+
+    </div>
+
+    <p class="section-footer">
+
+        Capture every meaningful learning event in one place.
+
+    </p>
+
+</section>
+
+
+<section id="review">
+
+    <h2>
+
+        Review
+
+    </h2>
+
+    <div class="review-flow">
+
+        Learn
+
+        ↓
+
+        Day 1
+
+        ↓
+
+        Day 3
+
+        ↓
+
+        Day 7
+
+        ↓
+
+        Day 30
+
+    </div>
+
+    <p>
+
+        Every completed study session automatically generates a customizable spaced repetition review schedule. Review only what is due each day and reinforce knowledge through active recall instead of repeatedly relearning the same material.
+
+    </p>
+
+    <img src="assets/reviews.png" alt="Review Dashboard">
+
+</section>
+
+
+<section id="measure">
+
+    <h2>
+
+        Measure
+
+    </h2>
+
+    <div class="metrics">
+
+        <div>
+
+            <h3>Learned</h3>
+
+        </div>
+
+        <div>
+
+            <h3>Cycles Completed</h3>
+
+        </div>
+
+        <div>
+
+            <h3>Review Events</h3>
+
+        </div>
+
+        <div>
+
+            <h3>Last Reviewed</h3>
+
+        </div>
+
+    </div>
+
+    <p>
+
+        StudyLedgerOS measures learning over time rather than simply counting completed tasks.
+
+    </p>
+
+    <img src="assets/progress.png" alt="Progress Dashboard">
+
+</section>
+
+
+<section id="plan">
+
+    <h2>
+
+        Plan
+
+    </h2>
+
+    <p>
+
+        Begin each day knowing exactly what requires attention. Daily goals, scheduled reviews, and study activity are presented in one place.
+
+    </p>
+
+    <img src="assets/dashboard.png" alt="Dashboard">
+
+</section>
+
+
+<section id="customize">
+
+    <h2>
+
+        Customize
+
+    </h2>
+
+    <div class="feature-grid">
+
+        <article>
+
+            Subjects
+
+        </article>
+
+        <article>
+
+            Sources
+
+        </article>
+
+        <article>
+
+            Daily Goals
+
+        </article>
+
+        <article>
+
+            Review Intervals
+
+        </article>
+
+        <article>
+
+            Study Modes
+
+        </article>
+
+        <article>
+
+            Cloud Sync
+
+        </article>
+
+        <article>
+
+            Import / Export
+
+        </article>
+
+        <article>
+
+            Backups
+
+        </article>
+
+    </div>
+
+    <p>
+
+        Adapt StudyLedgerOS to your curriculum instead of adapting your curriculum to your software.
+
+    </p>
+
+</section>
+
+
+<section id="analyze">
+
+    <h2>
+
+        Analyze
+
+    </h2>
+
+    <p>
+
+        Maintain a complete history of your study activity and measure long-term consistency through cumulative statistics.
+
+    </p>
+
+    <img src="assets/studylog.png" alt="Study Log">
+
+</section>
+
+
+<section id="applications">
+
+    <h2>
+
+        Applications
+
+    </h2>
+
+    <div class="applications">
+
+        <article>
+
+            <h3>
+
+                BarOS
+
+            </h3>
+
+            <p>
+
+                California Bar Examination
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>
+
+                MedOS
+
+            </h3>
+
+            <p>
+
+                Coming Soon
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>
+
+                CPAOS
+
+            </h3>
+
+            <p>
+
+                Coming Soon
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>
+
+                NCLEXOS
+
+            </h3>
+
+            <p>
+
+                Coming Soon
+
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>
+
+                MCATOS
+
+            </h3>
+
+            <p>
+
+                Coming Soon
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section id="faq">
+
+    <h2>
+
+        Frequently Asked Questions
+
+    </h2>
+
+    <h3>
+
+        Is StudyLedgerOS only for law students?
+
+    </h3>
+
+    <p>
+
+        No. It was originally developed for intensive legal education and designed to support any discipline that benefits from retrieval practice and spaced repetition.
+
+    </p>
+
+    <h3>
+
+        Can review schedules be customized?
+
+    </h3>
+
+    <p>
+
+        Yes.
+
+    </p>
+
+    <h3>
+
+        Can I export my data?
+
+    </h3>
+
+    <p>
+
+        Yes.
+
+    </p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+
+        StudyLedgerOS
+
+    </p>
+
+    <p>
+
+        BarOS
+
+    </p>
+
+    <p>
+
+        Version 1.1.1
+
+    </p>
+
+    <p>
+
+        © 2026 Drew Waters, Ph.D.
+
+    </p>
+
+</footer>
+
 </body>
+
 </html>
