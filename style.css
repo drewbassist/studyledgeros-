@@ -221,24 +221,6 @@ section > p {
 .applications article:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 50px rgba(0,0,0,.08);
-}
-
-/* ==========================================================
-   Review Flow
-========================================================== */
-
-.review-flow {
-    margin: 50px auto;
-    max-width: 320px;
-    padding: 40px;
-    border-radius: 20px;
-    border: 1px solid #e8e8e8;
-    background: #fafafa;
-    text-align: center;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 2;
-}
 
 /* ==========================================================
    Demo
