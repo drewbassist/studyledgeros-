@@ -29,7 +29,7 @@ video {
     width: 100%;
     border-radius: 18px;
     border: 1px solid #e8e8e8;
-    box-shadow: 0 20px 50px rgba(0,0,0,.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 }
 
 section {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 110px 32px;
 }
@@ -104,7 +104,7 @@ nav a:hover {
 
 .hero h1 {
     margin: 0;
-    font-size: clamp(64px,9vw,92px);
+    font-size: clamp(64px, 9vw, 92px);
     font-weight: 650;
     letter-spacing: -.05em;
 }
@@ -112,7 +112,7 @@ nav a:hover {
 .hero h2 {
     margin: 30px auto;
     max-width: 850px;
-    font-size: clamp(28px,4vw,42px);
+    font-size: clamp(28px, 4vw, 42px);
     font-weight: 300;
     color: #333;
 }
@@ -155,7 +155,7 @@ nav a:hover {
 
 h2 {
     margin: 0 0 24px;
-    font-size: clamp(42px,5vw,60px);
+    font-size: clamp(42px, 5vw, 60px);
     letter-spacing: -.04em;
     line-height: 1.05;
 }
@@ -186,16 +186,22 @@ section > p {
     margin: 50px 0;
 }
 
+/* Learn + Customize */
+
 .feature-grid {
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
+
+/* Measure */
 
 .metrics {
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
 
+/* Applications */
+
 .applications {
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .feature-grid article,
@@ -205,6 +211,7 @@ section > p {
     border: 1px solid #ececec;
     border-radius: 18px;
     padding: 34px;
+    text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,.05);
     transition: .25s;
 }
@@ -234,10 +241,21 @@ section > p {
 }
 
 /* ==========================================================
-   Demo Video
+   Demo
 ========================================================== */
 
 #demo video {
+    margin-top: 40px;
+}
+
+/* ==========================================================
+   Images
+========================================================== */
+
+#review img,
+#measure img,
+#plan img,
+#analyze img {
     margin-top: 40px;
 }
 
@@ -270,10 +288,27 @@ footer p {
 }
 
 /* ==========================================================
-   Responsive
+   Tablet
 ========================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
+    .feature-grid,
+    .metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .applications {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 700px) {
 
     header {
         flex-direction: column;
@@ -296,12 +331,26 @@ footer p {
         padding-top: 80px;
     }
 
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
     .hero p {
         font-size: 20px;
     }
 
     .review-flow {
         font-size: 22px;
+    }
+
+    .feature-grid,
+    .metrics,
+    .applications {
+        grid-template-columns: 1fr;
     }
 
 }
